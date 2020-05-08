@@ -1,0 +1,86 @@
+/* NAVBAR */
+.container {
+	max-width: 1350px;
+}
+
+.landingpage-flexgrow {
+	flex-grow: 0;
+}
+
+.landingpage-flexgrow ul li{
+	padding:0 1rem;
+}
+
+.landingpage-flexgrow ul li a {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #303134!important;
+}
+
+/* INTRO */
+.landingpage-intro {
+
+}
+
+
+.landingpage-intro img{
+	height: 700px;
+}
+
+.landingpage-intro h1 {
+	font-size: 5rem;
+}
+
+.landingpage-slide-centered {
+	text-align: center;
+	color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Our services */
+
+/* VIDEOTOUR */
+
+
+.landingpage-tour {
+	height: 500px;
+	background-image: url('img/videotourbackground.png');
+	background-size: cover;
+}
+
+
+.landingpage-tour-blur {
+	height: 500px;
+	width: 100%;
+	background-color: #000000;
+	opacity: 0.8;
+
+}
+
+.landingpage-tour-heading {
+	color: #fff;
+	text-align: center;
+
+}
+
+
+.landingpage-tour-videoplay {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -100%);	
+}
+
+.landingpage-tour-videoplay a {
+  	position: absolute;
+  	top: 65%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);		
+}
+
+.landingpage-achievement {
+	text-align: center;
+}
