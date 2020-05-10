@@ -163,12 +163,18 @@ body{
 	padding: 15px;
 }
 
+iframe {
+	max-width: 650px;
+	max-height: 350px;
+	width: 100%;
+	height: 100%;
+}
 
 @media screen and (max-width: 1200px) {
 	.landingpage-intro img {height: 500px;}
 	.landingpage-intro h1 {font-size: 2.5rem;}
 	.landingpage-offer-pic p{left: 30%;}
-	.landingpage-tour-videoplay iframe{width:450px; }
+	.landingpage-tour-videoplay iframe{max-width:450px;width: 100%; }
 }
 
 @media screen and (max-width: 991px){
@@ -182,11 +188,12 @@ body{
 @media screen and (max-width: 800px){
 	.landingpage-intro img {height: 400px;}
 	.landingpage-offer-pic p{left: 20%;}	
+	iframe {max-height: 500px;}
 
 }
 @media screen and (max-width: 700px){
 	.landingpage-offer-pic p{left: 25%;font-size: 18px;}
-	.landingpage-tour-videoplay iframe{width:350px;height:250px; }	
+	.landingpage-tour-videoplay iframe{ }	
 }
 
 @media screen and (max-width: 550px){
