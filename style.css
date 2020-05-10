@@ -1,4 +1,25 @@
+/* FONTS */
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.eot');
+    src: url('fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Regular.woff2') format('woff2'),
+        url('fonts/Raleway-Regular.woff') format('woff'),
+        url('fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
 /* NAVBAR */
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway';
+}
+
 .container {
 	max-width: 1350px;
 }
@@ -19,13 +40,11 @@
 
 /* INTRO */
 .landingpage-intro {
-
+	margin-top: 50px;
 }
 
 
-.landingpage-intro img{
-	height: 700px;
-}
+.landingpage-intro img{height: 700px;}
 
 .landingpage-intro h1 {
 	font-size: 5rem;
@@ -41,6 +60,9 @@
 }
 
 
+
+
+
 /* Our services */
 
 /* VIDEOTOUR */
@@ -50,6 +72,7 @@
 	height: 500px;
 	background-image: url('img/videotourbackground.png');
 	background-size: cover;
+	position: relative;
 }
 
 
@@ -68,19 +91,100 @@
 }
 
 
+
+
+.landingpage-tour-heading h2::after {
+	content: url('img/headingshape.svg');
+	display: block;
+}
+
 .landingpage-tour-videoplay {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -100%);	
 }
 
-.landingpage-tour-videoplay a {
-  	position: absolute;
-  	top: 65%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);		
-}
+
 
 .landingpage-achievement {
 	text-align: center;
+}
+
+
+
+
+/* OFFER */
+
+.landingpage-offer {
+	margin: 0 100px;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.landingpage-offer-block {
+	margin-top: 50px;
+	
+}
+
+.landingpage-offer-headingtext h2::after{
+	content: url('img/headingshape2.svg');
+	display: block;
+}
+
+
+.landingpage-offer-pic p{
+  	position: absolute;
+  	top: 5%;
+  	left: 25%;
+  	transform: translate(-50%, -50%);	
+  	padding:3px 10px;
+  	background-color: #FED701;	
+}
+
+.landingpage-offer-block div {
+	padding: 50!important;
+	box-shadow: 2px 2px 5px grey;
+}
+
+.landingpage-offer-pic img{
+	width: 100%;
+	position: relative;
+}
+
+.landingpage-offer-block h5,
+.landingpage-offer-block p {
+	margin: 0;
+	margin-top: 5px;
+}
+
+.landingpage-offer-block h5{color: #4B54FA;}
+
+.landingpage-offer-info {
+	padding: 15px;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.landingpage-intro img {height: 500px;}
+	.landingpage-intro h1 {font-size: 2.5rem;}
+	.landingpage-offer-pic p{left: 30%;}
+	.landingpage-tour-videoplay iframe{width:450px; }
+}
+
+@media screen and (max-width: 991px){
+	.landingpage-offer-pic p{
+		left: 15%;	top: 5%;}
+	.landingpage-offer-info{height: 70%;}
+	.landingpage-offer-info h5{font-size: 32px;}
+	.landingpage-offer-block p {font-size: 24px;}
+}
+
+@media screen and (max-width: 800px){
+	.landingpage-intro img {height: 400px;}
+	.landingpage-offer-pic p{left: 20%;}	
+
+}
+@media screen and (max-width: 700px){
+	.landingpage-offer-pic p{left: 25%;font-size: 18px;}
+	.landingpage-tour-videoplay iframe{width:350px;height:250px; }	
 }
