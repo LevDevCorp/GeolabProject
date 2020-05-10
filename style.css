@@ -188,3 +188,53 @@ body{
 	.landingpage-offer-pic p{left: 25%;font-size: 18px;}
 	.landingpage-tour-videoplay iframe{width:350px;height:250px; }	
 }
+
+@media screen and (max-width: 550px){
+	.landingpage-offer-pic p{left: 25%;font-size: 12px;}
+	.landingpage-offer-info p{font-size: 12px;}
+	.landingpage-offer-info h5{font-size: 16px;}
+}
+@media screen and (max-width: 450px){
+	.landingpage-offer-pic p{left: 30%;font-size: 8px;}
+}
+
+
+
+
+
+footer {
+	background-color: #141418;
+}
+
+
+footer ul {
+	list-style-type:none;
+}
+
+footer h5 {
+	color:#fff;
+}
+
+footer li,
+footer a,
+footer label {
+	color:#DCDBDB;
+}
+
+.footer-search .footer-searchicon {
+	background-color: #08AEEA;
+	padding: 10px;
+	height: 50px;
+	position: absolute;
+}
+
+.footer-search input {
+	height: 50px;
+	width: 250px;
+	padding: 10px;
+}
+
+.footer-search {
+	text-align: center;
+}
+
