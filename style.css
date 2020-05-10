@@ -41,6 +41,8 @@ body{
 /* INTRO */
 .landingpage-intro {
 	margin-top: 50px;
+	background-color:linear-gradient(to bottom,#08AEEA,#2AF598);
+	opacity: .65;
 }
 
 
@@ -163,26 +165,21 @@ body{
 	padding: 15px;
 }
 
-iframe {
-	max-width: 650px;
-	max-height: 350px;
-	width: 100%;
-	height: 100%;
-}
+
 
 @media screen and (max-width: 1200px) {
 	.landingpage-intro img {height: 500px;}
 	.landingpage-intro h1 {font-size: 2.5rem;}
 	.landingpage-offer-pic p{left: 30%;}
-	.landingpage-tour-videoplay iframe{max-width:450px;width: 100%; }
+	
 }
 
 @media screen and (max-width: 991px){
-	.landingpage-offer-pic p{
-		left: 15%;	top: 5%;}
+	.landingpage-offer-pic p{left: 15%;	top: 5%;}
 	.landingpage-offer-info{height: 70%;}
 	.landingpage-offer-info h5{font-size: 32px;}
 	.landingpage-offer-block p {font-size: 24px;}
+	.landingpage-tour-videoplay iframe{width:500px;height: 300px; }
 }
 
 @media screen and (max-width: 800px){
@@ -193,7 +190,7 @@ iframe {
 }
 @media screen and (max-width: 700px){
 	.landingpage-offer-pic p{left: 25%;font-size: 18px;}
-	.landingpage-tour-videoplay iframe{ }	
+	.landingpage-tour-videoplay iframe{width:400px;height: 250px; }
 }
 
 @media screen and (max-width: 550px){
@@ -203,6 +200,8 @@ iframe {
 }
 @media screen and (max-width: 450px){
 	.landingpage-offer-pic p{left: 30%;font-size: 8px;}
+	.landingpage-tour-blur {height: 400px}
+	.landingpage-tour-videoplay iframe{width:100%;height: 100%; }
 }
 
 
